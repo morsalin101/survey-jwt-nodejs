@@ -1,6 +1,9 @@
 {
   "version": 2,
   "name": "survey-jwt-nodejs",
+  "builds": [
+    { "src": "api/**/*.js", "use": "@vercel/node" }
+  ],
   "routes": [
     { "src": "/auth", "dest": "/api/auth" },
     { "src": "/", "dest": "/api/health" }
@@ -9,8 +12,5 @@
     "FIREBASE_PROJECT_ID": "nglapp-e7eaa",
     "HASURA_GRAPHQL_JWT_SECRET": "@hasura_jwt_secret",
     "NODE_ENV": "production"
-  },
-  "functions": {
-    "api/**/*.js": { "maxDuration": 10 }
   }
 }
