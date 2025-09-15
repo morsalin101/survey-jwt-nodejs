@@ -2,22 +2,15 @@
   "version": 2,
   "name": "survey-jwt-nodejs",
   "routes": [
-    {
-      "src": "/auth",
-      "dest": "/api/auth"
-    },
-    {
-      "src": "/",
-      "dest": "/api/health"
-    }
+    { "src": "/auth", "dest": "/api/auth" },
+    { "src": "/", "dest": "/api/health" }
   ],
   "env": {
     "FIREBASE_PROJECT_ID": "nglapp-e7eaa",
+    "HASURA_GRAPHQL_JWT_SECRET": "@hasura_jwt_secret",
     "NODE_ENV": "production"
   },
   "functions": {
-    "api/**/*.js": {
-      "maxDuration": 10
-    }
+    "api/**/*.js": { "maxDuration": 10 }
   }
 }
