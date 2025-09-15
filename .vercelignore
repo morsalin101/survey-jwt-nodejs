@@ -1,0 +1,27 @@
+# Local development files
+.env
+.env.local
+.env.development.local
+.env.test.local
+
+# Development server (not needed for Vercel)
+server.js
+auth-handler.js
+
+# Logs
+*.log
+logs/
+
+# Dependencies (Vercel will install these)
+node_modules/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/

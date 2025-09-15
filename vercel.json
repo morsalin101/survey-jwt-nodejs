@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "name": "survey-jwt-nodejs",
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/auth",
+      "dest": "/api/auth"
+    },
+    {
+      "src": "/",
+      "dest": "/api/health"
+    }
+  ],
+  "env": {
+    "FIREBASE_PROJECT_ID": "@firebase_project_id",
+    "NODE_ENV": "production"
+  },
+  "functions": {
+    "api/**/*.js": {
+      "maxDuration": 10
+    }
+  }
+}
