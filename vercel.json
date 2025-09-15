@@ -1,12 +1,6 @@
 {
   "version": 2,
   "name": "survey-jwt-nodejs",
-  "builds": [
-    {
-      "src": "api/**/*.js",
-      "use": "@vercel/node"
-    }
-  ],
   "routes": [
     {
       "src": "/auth",
