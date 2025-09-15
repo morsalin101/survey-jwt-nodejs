@@ -18,7 +18,7 @@
     }
   ],
   "env": {
-    "FIREBASE_PROJECT_ID": "@firebase_project_id",
+    "FIREBASE_PROJECT_ID": "nglapp-e7eaa",
     "NODE_ENV": "production"
   },
   "functions": {
