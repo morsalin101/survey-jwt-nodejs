@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js",
+    "dev": "nodemon server.js",
     "vercel-dev": "vercel dev",
     "deploy": "vercel --prod"
   },
@@ -24,13 +23,13 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
-    "jwks-rsa": "^3.0.1"
+    "jwks-rsa": "^3.0.1",
+    "firebase-admin": "^12.0.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1",
-    "vercel": "^32.7.2"
+    "nodemon": "^3.0.1"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": "18.x"
   }
 }
